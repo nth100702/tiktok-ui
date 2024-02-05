@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
-import Tippy from '@tippyjs/react';
+import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '~/components/Poper';
 import MenuItem from './MenuItem';
 import Header from './Header';
@@ -34,7 +34,7 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
     return (
         <Tippy
             interactive
-            delay={[0, 70]}
+            delay={[0, 700]}
             offset={[12, 8]}
             hideOnClick={hideOnClick}
             placement="bottom-end"
